@@ -1,8 +1,7 @@
-package ParkingLot.Vehicle
-import ParkingLot.Enum.VehicleSize
+package parkinglot.vehicle;
 
-public class Bike extends Vehicle{
-	public Bike(String LicenseNumber ){
-		super(LicenseNumber, VehicleSize.SMALL);
-	}
+public class Bike extends Vehicle {
+    public Bike(String licenseNumber) {
+        super(licenseNumber, VehicleSize.SMALL);
+    }
 }

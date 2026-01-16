@@ -1,19 +1,16 @@
-package ParkingLot.Vehicle;
-import ParkingLot.Enum.VehicleSize;
+package parkinglot.vehicle;
 
-public abstract class Vehicle{
-	private final String LicenseNumber;
-	private final VehicleSize size;
+public abstract class Vehicle {
+    private final String licenseNumber;
+    private final VehicleSize size;
 
-	public Vehicle(String LicenseNumber , VehicleSize size){
-		this.LicenseNumber = LicenseNumber;
-		this.size = size;
-	}
+    public Vehicle(String licenseNumber, VehicleSize size) {
+        this.licenseNumber = licenseNumber;
+        this.size = size;
+    }
 
-	public String getlicense(){
-		return LicenseNumber;
-	}
-	public VehicleSize getsize(){
-		return size;
-	}
+    public String getLicenseNumber() { return licenseNumber; }
+    public VehicleSize getSize() {
+        return size;
+    }
 }

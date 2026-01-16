@@ -1,40 +1,31 @@
-package ParkingLot.entities
+package parkinglot.entities;
 
-import ParkingLot.Vehicle.Vehicle;
+import parkinglot.vehicle.Vehicle;
 
 import java.util.Date;
 import java.util.UUID;
 
-public class ParkingTicket{
-	private final String Ticketid;
-	private final Vehicle vehicle;
-	private final ParkingSpot spot;
-	private final long entryTimeStamp;
-	private long exitTimeStamp;
+public class ParkingTicket {
+    private final String ticketId;
+    private final Vehicle vehicle;
+    private final ParkingSpot spot;
+    private final long entryTimestamp;
+    private long exitTimestamp;
 
-	public ParkingTicket(Vehicle vehicle , ParkingSpot spot){
-		this.Ticketid = UUID.randomUUID().toString();
-		this.vehicle = vehicle;
-		this.spot = spot;
-		this.entryTimeStamp = new Date().getTime();
-	}
-	public String getticketid(){
-		return Ticketid;
-	}
-	public Vehicle getvehicle(){
-		return vehicle;
-	}
-	public ParkingSpot getspot(){
-		return spot;
-	}
-	public long getExitTime(){
-		return exitTimeStamp;
-	}
-	public long getEnterTime(){
-		return entryTimeStamp;
-	}
-	public long setExitTime(){
-		this.exitTimeStamp = new Date().getTime();
-	}
+    public ParkingTicket(Vehicle vehicle, ParkingSpot spot) {
+        this.ticketId = UUID.randomUUID().toString();
+        this.vehicle = vehicle;
+        this.spot = spot;
+        this.entryTimestamp = new Date().getTime();
+    }
+
+    public String getTicketId() { return ticketId; }
+    public Vehicle getVehicle() { return vehicle; }
+    public ParkingSpot getSpot() { return spot; }
+    public long getEntryTimestamp() { return entryTimestamp; }
+    public long getExitTimestamp() { return exitTimestamp; }
+
+    public void setExitTimestamp() {
+        this.exitTimestamp = new Date().getTime();
+    }
 }
-

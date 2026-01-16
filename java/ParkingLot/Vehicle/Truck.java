@@ -1,8 +1,7 @@
-package ParkingLot.Vehicle
-import ParkingLot.Enum.VehicleSize
+package parkinglot.vehicle;
 
-public class Truck extends Vehicle{
-	public Truck(String LicenseNumber){
-		super(LicenseNumber, VehicleSize.LARGE);
-	}
+public class Truck extends Vehicle {
+    public Truck(String licenseNumber) {
+        super(licenseNumber, VehicleSize.LARGE);
+    }
 }
