@@ -1,2 +1,0 @@
-package vendingmachine.state;
-
