@@ -1,5 +1,5 @@
 package chess;
-
+import chess.pieces.Piece;
 public class Cell{
 	public final int row;
 	public final int col;

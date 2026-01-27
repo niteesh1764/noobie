@@ -1,9 +1,9 @@
 package chess.pieces;
 
-import chess.*
+import chess.*;
 public class Rook extends Piece{
 	public Rook(Color color) {
-		super(color)
+		super(color);
 	}
 
 	@Override
